@@ -101,7 +101,7 @@ h6 {
 
 hr {
   width: 95%;
- margin: auto;
+  margin: auto;
 }
 
 /* PHP Email Form Messages
@@ -1256,18 +1256,43 @@ section,
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
+.gallery {
+  column-count: 3;
+  column-gap: 15px;
+}
+
 .gallery .gallery-item {
+  break-inside: avoid;
+  margin-bottom: 15px;
   overflow: hidden;
   border-right: 3px solid var(--background-color);
   border-bottom: 3px solid var(--background-color);
 }
 
 .gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
   transition: all ease-in-out 0.4s;
 }
 
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 1;
+  }
 }
 
 /*--------------------------------------------------------------
