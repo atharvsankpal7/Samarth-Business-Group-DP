@@ -192,9 +192,18 @@ hr {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
+ background-color: var(--surface-color);
+
+}
+
+
+@media (min-width: 1025px) {
+  .scrolled .header {
   --background-color: rgba(33, 13, 255, 0.568);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
 }
 
 /*--------------------------------------------------------------
