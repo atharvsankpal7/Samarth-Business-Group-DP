@@ -1352,7 +1352,7 @@ section,
   padding: 20px;
   border: 3px solid color-mix(in srgb, var(--default-color), transparent 85%);
   margin: 0 auto;
-  background-color: #f4f5fe;
+  background-color: #ffffff;
 }
 
 .testimonials .testimonial-item h3 {
