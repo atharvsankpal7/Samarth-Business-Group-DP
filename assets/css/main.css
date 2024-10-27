@@ -1122,6 +1122,31 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Director Section
+--------------------------------------------------------------*/
+.director .director-info {
+  padding: 10rem;
+  width: 100%;
+  background: var(--highlight-color);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* .director .director-info:hover {
+  animation: border-spectrum 5s linear infinite;
+}
+
+@keyframes border-spectrum {
+  0% { border-color: #ff0000; }
+  16.666% { border-color: #ff00ff; }
+  33.333% { border-color: #0000ff; }
+  50% { border-color: #00ffff; }
+  66.666% { border-color: #00ff00; }
+  83.333% { border-color: #ffff00; }
+  100% { border-color: #ff0000; }
+} */
+
+
+/*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
 .features .heading {
@@ -1130,7 +1155,7 @@ section,
 }
 
 .features .features-item {
-  background-color: var(--surface-color);
+  background-color: var(--heading-color);
   display: flex;
   align-items: center;
   padding: 20px;
@@ -1156,19 +1181,19 @@ section,
 }
 
 .features .features-item h3 a {
-  color: var(--heading-color);
+  color: var(--background-color);
   transition: 0.3s;
   font-size: x-large;
 }
 
 .features .features-item:hover {
-  border-color: var(--accent-color);
+  border-color: var(--highlight-color);
   transition: translate ease-in 100ms;
   translate: 0 -5px;
 }
 
 .features .features-item:hover h3 a {
-  color: var(--accent-color);
+  color: var(--highlight-color);
 }
 
 /*--------------------------------------------------------------
@@ -1364,6 +1389,8 @@ section,
   border: 3px solid color-mix(in srgb, var(--default-color), transparent 85%);
   margin: 0 auto;
   background-color: #ffffff;
+  object-fit: contain;
+  height: 150px;
 }
 
 .testimonials .testimonial-item h3 {
@@ -1913,6 +1940,15 @@ section,
 }
 
 .logos-slide img {
-  height: 100px;
+  height: 6.5rem;
   margin: 0 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  border-radius: 12px;
 }
+
+.logos-slide img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
