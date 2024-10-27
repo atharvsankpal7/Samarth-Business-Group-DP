@@ -202,11 +202,7 @@
 
   var typed = new Typed("#element", {
     strings: [
-      "We are team of talented people working to make your life easier",
-      "Our team of experts is committed to simplifying your daily tasks.",
-      "We are a passionate team focused on improving your quality of life.",
-      "We are a diverse group striving to make every aspect of your life more convenient.",
-      "We are a group of skilled professionals dedicated to enhancing your experience.",
+      "Co-operative Development for Ultimate Satisfaction!",
     ],
     typeSpeed: 60,
   });
