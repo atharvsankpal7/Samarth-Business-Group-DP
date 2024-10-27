@@ -225,12 +225,12 @@ hr {
     position: relative;
   }
 
-  .navmenu > ul > li {
+  .navmenu>ul>li {
     white-space: nowrap;
     padding: 15px 14px;
   }
 
-  .navmenu > ul > li:last-child {
+  .navmenu>ul>li:last-child {
     padding-right: 0;
   }
 
@@ -257,7 +257,7 @@ hr {
     transition: 0.3s;
   }
 
-  .navmenu > ul > li > a:before {
+  .navmenu>ul>li>a:before {
     content: "";
     position: absolute;
     height: 2px;
@@ -270,13 +270,13 @@ hr {
   }
 
   .navmenu a:hover:before,
-  .navmenu li:hover > a:before,
+  .navmenu li:hover>a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 25px;
   }
 
-  .navmenu li:hover > a,
+  .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-color);
@@ -315,11 +315,11 @@ hr {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover > a {
+  .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover > ul {
+  .navmenu .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -331,7 +331,7 @@ hr {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover > ul {
+  .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -433,7 +433,7 @@ hr {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown > .dropdown-active {
+  .navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -460,7 +460,7 @@ hr {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu > ul {
+  .mobile-nav-active .navmenu>ul {
     display: block;
   }
 }
@@ -477,8 +477,7 @@ hr {
 
 .footer .footer-top {
   padding-top: 50px;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .footer-about .logo {
@@ -616,8 +615,7 @@ hr {
 
 .footer .copyright {
   padding: 25px 0;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -717,8 +715,7 @@ hr {
 
 .page-title .heading {
   padding: 160px 0 80px 0;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title .heading h1 {
@@ -740,11 +737,11 @@ hr {
   font-weight: 600;
 }
 
-.page-title nav ol li + li {
+.page-title nav ol li+li {
   padding-left: 10px;
 }
 
-.page-title nav ol li + li::before {
+.page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -764,6 +761,7 @@ section,
 }
 
 @media (max-width: 1199px) {
+
   section,
   .section {
     scroll-margin-top: 66px;
@@ -1109,6 +1107,7 @@ section,
 }
 
 @media (max-width: 768px) {
+
   .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
   .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
     margin-top: 0;
@@ -1225,12 +1224,12 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.details .features-item + .features-item {
+.details .features-item+.features-item {
   margin-top: 100px;
 }
 
 @media (max-width: 640px) {
-  .details .features-item + .features-item {
+  .details .features-item+.features-item {
     margin-top: 40px;
   }
 }
@@ -1746,7 +1745,7 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item + .info-item {
+.contact .info-item+.info-item {
   margin-top: 40px;
 }
 
@@ -1794,11 +1793,9 @@ section,
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 50%
-  );
+  background-color: color-mix(in srgb,
+      var(--background-color),
+      transparent 50%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -1827,11 +1824,18 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
+
+
 /*--------------------------------------------------------------
-# Starter Section Section
+# Clients Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.clients {
+  background-color: var(--surface-color);
+}
+
+.clients h2 {
+
+  color: var(--default-color);
 }
 
 .heading1 {
@@ -1842,13 +1846,14 @@ section,
   background-color: #f8f9fa;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes slide {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -1860,6 +1865,8 @@ section,
   background: white;
   white-space: nowrap;
   position: relative;
+  user-select: none;
+
 }
 
 .logos:before,
@@ -1881,16 +1888,17 @@ section,
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
+
 @media (max-width: 768px) {
+
   /* Adjust the max-width as needed */
   .logos:before,
   .logos:after {
-    background: none; /* Remove the gradient effect */
+    background: none;
+    /* Remove the gradient effect */
   }
 }
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-}
+
 
 .logos-slide {
   display: inline-block;
