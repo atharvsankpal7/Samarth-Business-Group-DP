@@ -135,10 +135,13 @@
               <p><strong>Education:</strong> B.A.</p>
               <div class="mt-4">
                 <h4>Director's Message</h4>
-                <blockquote class="fst-italic">
+                <!-- <blockquote class="fst-italic">
                   "यशस्वी होण्यासाठी तुमचे ह्रदय तुमच्या व्यवसायात असले पाहिजे
                   आणि तुमचा व्यवसाय तुमच्या ह्रदयात असावा.....!"
-                </blockquote>
+                </blockquote> -->
+                <div class="fst-italic">
+                  <span id="Agro-Food-Allies"></span>
+                </div>
               </div>
             </div>
             <div class="col-lg-6 d-flex justify-content-center">
@@ -511,6 +514,7 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/php-email-form/validate.js"></script>
     <script src="../assets/vendor/aos/aos.js"></script>
@@ -519,6 +523,14 @@
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
+    <script>
+      var typed = new Typed("#Agro-Food-Allies", {
+        strings: [
+          '"यशस्वी होण्यासाठी तुमचे ह्रदय तुमच्या व्यवसायात असले पाहिजे आणि तुमचा व्यवसाय तुमच्या ह्रदयात असावा.....!"',
+        ],
+        typeSpeed: 60,
+      });
+    </script>
     <script src="../assets/js/main.js"></script>
   </body>
 </html>
