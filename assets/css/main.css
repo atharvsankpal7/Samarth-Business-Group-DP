@@ -11,10 +11,13 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+@import url('../fonts/font.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+
+
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
@@ -166,7 +169,7 @@ hr {
   --background-color: rgba(255, 255, 255, 0.9);
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 1rem 0;
   transition: all 0.5s;
   z-index: 997;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -183,8 +186,8 @@ hr {
 
 .header .logo img {
   margin-right: 8px;
-  max-height: 40px;
-  width: auto;
+  max-width: 75px;
+  /* width: auto; */
 }
 
 .header .logo h1 {
@@ -199,8 +202,13 @@ hr {
     padding: 15px 0;
   }
 
+  .header .logo img {
+    margin-right: 8px;
+    width: 50px;
+  }
+
   .header .logo h1 {
-    font-size: 24px;
+    font-size: 12px;
   }
 }
 
@@ -587,6 +595,12 @@ hr {
   margin-bottom: 5px;
 }
 
+.footer .footer-contact p a {
+
+  color: var(--highlight-color);
+  font-weight: bold;
+}
+
 .footer .footer-newsletter .newsletter-form {
   margin-top: 30px;
   margin-bottom: 15px;
@@ -635,8 +649,18 @@ hr {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+
 .footer .copyright p {
   margin-bottom: 0;
+}
+
+.footer .copyright a {
+  color: var(--highlight-color);
+  transition: text-shadow 0.3s;
+}
+
+.footer .copyright a:hover {
+  text-shadow: 0 0 5px var(--highlight-color);
 }
 
 .footer .credits {
@@ -726,7 +750,13 @@ hr {
 --------------------------------------------------------------*/
 .page-title {
   color: var(--default-color);
+  position: relative;
   background-color: var(--background-color);
+  background-image: url('https://evco.co.in/wp-content/uploads/2023/05/How-Infrastructure-Development-Impacts-Economic-Growth.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -758,11 +788,14 @@ hr {
   padding-left: 10px;
 }
 
+.page-title nav ol li a {
+  color: var(--highlight-color);
+}
+
 .page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
 /*--------------------------------------------------------------
@@ -858,6 +891,12 @@ section,
   position: relative;
   z-index: 3;
 }
+.hero .hero-img{
+  /* object-fit: contain; */
+}
+
+
+
 
 .hero h1 {
   margin: 0 0 20px 0;
@@ -1148,6 +1187,10 @@ section,
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.director .director-info span {
+  margin-bottom: 2rem;
+}
+
 /* .director .director-info:hover {
   animation: border-spectrum 5s linear infinite;
 }
@@ -1166,9 +1209,13 @@ section,
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+
+
 .features .heading {
+  font-family: "Metal Mania", serif;
   text-align: center;
   font-size: 5rem;
+  font-weight: bolder;
 }
 
 .features .features-item {
@@ -1196,14 +1243,15 @@ section,
 }
 
 .features .features-item h3 {
-  font-weight: 700;
   margin: 0;
   padding: 0;
   line-height: 1.3;
   font-size: 1.25rem;
 }
 
+
 .features .features-item h3 a {
+  font-family: "Playwrite GB S", cursive;
   color: var(--default-color);
   transition: all 0.4s ease;
   font-size: 1.75rem;
@@ -1221,7 +1269,9 @@ section,
 
 .features .features-item:hover h3 a {
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
-}/*--------------------------------------------------------------
+}
+
+/*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
 .stats i {
@@ -1264,7 +1314,11 @@ section,
   font-size: 36px;
   display: block;
   font-weight: 700;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.stats-container i {
+  color: black;
 }
 
 .stats .stats-item p {
@@ -1272,6 +1326,7 @@ section,
   margin: 0;
   font-family: var(--heading-font);
   font-size: 16px;
+
 }
 
 /*--------------------------------------------------------------
@@ -1925,7 +1980,7 @@ section,
   white-space: nowrap;
   position: relative;
   user-select: none;
-  
+
 }
 
 .logos:before,
