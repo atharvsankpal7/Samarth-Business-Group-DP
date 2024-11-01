@@ -546,7 +546,15 @@ hr {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
+.footer .footer-services {
+  border-left: 1px solid var(--contrast-color);
+}
 
+@media screen and (max-width: 767px) {
+  .footer .footer-services {
+    border-left: 0px;
+  }
+}
 .footer h4 {
   font-size: 16px;
   font-weight: bold;
@@ -891,9 +899,7 @@ section,
   position: relative;
   z-index: 3;
 }
-.hero .hero-img{
-  /* object-fit: contain; */
-}
+
 
 
 
